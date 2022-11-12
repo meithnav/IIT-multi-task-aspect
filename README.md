@@ -27,7 +27,7 @@ consists 3 variants viz, WithoutBiLSTM, WithoutAttention, WithoutBoth. In the no
 
 ### 4) Attention Analysis:
 
-This [notebook]((https://github.com/meithnav/IIT-multi-task-aspect/blob/main/notebooks/Attention_Analysis.ipynb)) loads our proposed model and produces a sentence-wise heatmap distribution for aspect categories for 2 selected Reviews which is discussed in depth in our paper.
+This [notebook](https://github.com/meithnav/IIT-multi-task-aspect/blob/main/notebooks/Attention_Analysis.ipynb) loads our proposed model and produces a sentence-wise heatmap distribution for aspect categories for 2 selected Reviews which is discussed in depth in our paper.
 
 #### IMPORTANT POINTS BEFORE RUNNING:
 
