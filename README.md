@@ -1,1 +1,1 @@
-# IIT-multi-task-aspect
+# Multi-Task Approach to Aspect Category & Sentiment
