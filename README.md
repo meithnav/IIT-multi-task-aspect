@@ -1,5 +1,36 @@
 # Multi-Task Approach to Aspect Category & Sentiment
 
 
-## Abstract: 
-Peer reviewing is being globally adopted by all the revered journals and conference proceedings, and it plays a pivotal role in a paper’s acceptance or rejection. Nevertheless, with the surge in paper submissions, the peer-reviewing system witnesses elevated levels of backlog, perforcing them to depute the peer-reviewing tasks to naive and unseasoned reviewers, consequently opening the reviewing system to a new range of problems like bias, discrimination, inconsistencies, and poor analysis, resulting into inappropriate and weak rejects. So it’s the need of the hour to engineer a model that could help the editors to examine the quality of the peer reviews and provide reassurance, especially in case of vitriolic criticism and differing reviews. A good review analysis the entire paper holistically, expressing all the key aspect properties like motivation, clarity, soundness, substance, etc., of the paper. Along similar lines, we propose a multi-task model that successfully extracts the aspect categories and their associated sentiment for any given peer review, helping the editors to make quick decisions regarding the conformity of the peer reviews and expediting the overall process. Our proposed model comprises a BiLSTM layer and multiple attention blocks – An attention layer that efficiently captures the key aspect terms in the review sentences and preserves the context for long reviews. We use SciBERT in the embedding layer to enhance the model’s performance by adeptly apprehending the scientific jargon. Our proposed model outperforms all the state-of-the-art and competitive baseline models, which are expounded lucidly in the paper with the help of graphical plots and test cases. We obtained an accuracy of 88.1%. The code, results, plots, and dataset associated with the research are made publicly available for future research
+## Download the project source folder
+
+Can download the source code using `git clone` or the `zip file`.
+
+
+## Notebooks:
+
+### 1)  Our Proposed Model:
+This notebook consists our proposed multi-task model for aspect category classification and sentiment detection.  
+
+### 2) POS-SciBERT Model: 
+This notebook consists another competitve variant of our proposed model, wherein we feed <b>POS one-hot-encoded </b> and <b> SciBERT embeddings</b> parallelly. 
+
+### 3) Ablation Variants Models: 
+This notebook consists 3 variants viz, WithoutBiLSTM, WithoutAttention, WithoutBoth. In the notebook we have 3 different cells after <b>Models</b> header for initialising each model. Uncomment the one that you want to reproduce and let the other two be commented. Note:  
+
+
+### 4) Attention Analysis: 
+This notebook loads our proposed model and produces a sentence-wise heatmap distribution for aspect categories for 2 selected Reviews which is discussed in depth in our paper. 
+
+#### IMPORTANT POINTS BEFORE RUNNING: 
+a) Change the `URL PATH` accordingly before loading the dataset(pickle files) <br>
+b) The 1st tab in the notebook consists all the additional dependencies required and will be downloaded on running the cell <br>
+c) For `SAVE_PATH` set the URL path where you want to save the trained model <br>
+  
+Once all the setup is complete then execute `run all`. 
+
+
+## Libraries & Dependencies used:
+  <li>TensorFlow
+  <li>Keras
+  <li>Hugging Face
+  <li>Matplotlib, numpy, pandas, pickle
