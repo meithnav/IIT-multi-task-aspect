@@ -5,6 +5,8 @@
 
 Can download the source code using `git clone` or the `zip file`.
 
+## Dataset:
+This folder contains a our_dataset zip file which has all the annotated review sentences, SciBERT embeddings, BERT_BASE embeddings, POS one-hot-encoded data, reviews(X) and annotations and it's polarity(Y). We have also stored the embeddings to expedite the training process. 
 
 ## Notebooks:
 
